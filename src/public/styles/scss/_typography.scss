@@ -9,7 +9,9 @@ html {
 
 body {
   line-height: 1.8em;
-  @include font($open-sans, $base-font-size, 300);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @include font($open-sans, $base-font-size, 400);
 }
 
 ::selection {
@@ -24,9 +26,13 @@ body {
   //text-rendering: optimizeLegibility;
   color:  color(text);
   line-height: 1.1em;
-  @include font($open-sans, 16, 300);
+  @include font($open-sans, 16, 400);
   &::selection{
     //color: #000;
+  }
+
+  *+& {
+    padding-top: 0.5rem;
   }
 }
 

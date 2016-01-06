@@ -510,8 +510,10 @@ html {
 
 body {
   line-height: 1.8em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-family: "Open Sans", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
 }
@@ -534,9 +536,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #3a3a3a;
   line-height: 1.1em;
   font-family: "Open Sans", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
+}
+* + h1, * + h2, * + h3, * + h4, * + h5, * + h6 {
+  padding-top: 0.5rem;
 }
 
 h1 {
@@ -570,12 +575,13 @@ h6 {
 }
 
 html {
-  background-color: whitesmoke;
+  background-color: #fff;
+  padding: 4rem 0;
 }
 
 .container {
   width: 90%;
-  max-width: 960px;
+  max-width: 760px;
   margin: 0 auto;
 }
 
@@ -589,17 +595,12 @@ html {
   vertical-align: middle;
 }
 
-html, body {
-  height: 100%;
-  text-align: center;
+hr {
+  margin: 3rem 0;
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-.grid {
-  margin: 32px 0;
-}
-.grid div {
-  height: 32px;
-  margin-bottom: 20px;
-  background-clip: content-box;
-  background-color: #d6d6d6;
+ul {
+  margin-bottom: 1rem;
 }

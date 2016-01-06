@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Batter — Index </title>
+    <title>SL Questions</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="public/styles/styles.min.css">
@@ -17,43 +17,91 @@
   <body>
     
     
-  
-  <nav>
+      
   <div class="container">
+    <p>Onboarding = walkthrough introducing a user to the app on first launch. and != inviting a another user.</p>
+
+    <h4>Asking to pray: </h4>
+    
+    <ul>
+      <li>Does this function as inviting users without the app? </li>
+      <li>During the onboarding process after a user first installs the app? </li>
+      <li>During the request to follow interaction? how is this triggered? </li>
+      <li>does this trigger when a request to pray(follow) is initiated, which would include users with the app?</li>
+    </ul>  
+
+    <h4>Screen for own prayers: </h4>
+    
+    <ul>
+      <li>do we only show a list of own prayers on the users own profile screen? </li>
+      <li>do we need a tab for this? </li>
+      <li>when someone asks you how they can pray for you, do we force a new prayer to be written? do we show the user a screen with a list of prayers where he/she may select a prayer to send?</li>
+    </ul>
+
+    <h5>Flow?</h5>
+    <ul>
+      <li>User receives notification of other user asking for a prayer</li>
+      <li>User taps the notification in notification screen</li>
+      <li>App moves to (a new) view of own prayers</li>
+      <li>User can either select one, or create a new prayer</li>
+    </ul>
+
+    <p>*Problem: prayer is only sent to the requesting person if a new prayer is created. Assumes prayers have visibility/privacy features.</p>
+
+    <p>IMO, "Asking to Pray" should be a feature used when *inviting* external users to the app, not a feature triggered by a follow request.</p>    
+
+    <hr>
+
+    <h4>Prayer functions:</h4>
+
+    <ul><li>Do we allow prayers to be threaded to other prayers? </li>
+    <li>Are we keeping commenting? </li>
+    <li>Are we keeping answering?</li>
+    <li>What functions does a prayer have? Thread another prayer? Comment? Answer? Delete? Edit? Set visibility/privacy?</li></ul>
+
+    <p>For MVP, I'd suggest launching without some of these features</p>
+
+
+    <p>Are we letting users style their prayers? From meeting with camera, we decided to let users select an app “theme” which would dicate how all their incoming prayers look. Patterns? Gradients? Images?</p>
+
+    <h4>Notifications:</h4> 
+
+    <ul><li>Do we need a notifications tab? </li>
+    <li>How many different types of notifications will the app have?</li>
+    <li>Recieving a request? Another user adding your prayer? A prayer on your list is answered, concatenated, closed, commented?</li>
+    <li>Do we need to separate these notification types into separate tabs?</li></ul>
+
+    <hr>
+    <h5>Main Views:</h5>
+    
+    <ul>
+    <li>Feed</li>
+    <li>Prayer List</li>
+    <li>Other (sidebar)</li>
+      <ul><li>Notifications</li>
+      <li>Connect</li>
+      <li>Account</li>
+      <li>Logout</li></ul>
+    <li>(Potential) Own Prayers</li>
+    <li>(Potential) Notifications</li>
+    <li>(Potential) Profile</li>
+    <li>(Potential) Connect</li>
+    </ul>
+
+    <h6>Other ideas from my sprint:</h6>
+    <ul>
+      <li>Main "Feed" view with two sub-tabs: All Prayers, and My Prayers. Maybe even including the Prayer List view?</li>
+      <li>Own Profile becoms another main view, and would function as the "My Prayers" holder</li>
+      <li>Notifcations view as a main tab</li>
+      <li>Connect View as a main tab</li>
+    </ul>
+
+    <p>*Current navigation works because of only 3 main views and the rest not accessible through the top nav. More main views will require a different navigation style</p>
+
+
 
   </div>
-</nav>
-  
-  <div class="vertical-align--table">
-    <div class="vertical-align--table-cell">
-      
-      <div class="container">
-        <h1>Batter</h1>
-        <div class="grid">
-          <div class="col-6"></div>
-          <div class="col-6"></div>
-          <div class="col-4"></div>
-          <div class="col-8"></div>
-          <div class="col-4"></div>
-          <div class="col-4"></div>
-          <div class="col-4"></div>
-          <div class="col-5"></div>
-          <div class="col-5 col--push-2"></div>
-          <div class="col-9 col--centered"></div>
-          <div class="col-2"></div>
-          <div class="col-2"></div>
-          <div class="col-2"></div>
-          <div class="col-2"></div>
-          <div class="col-2"></div>
-          <div class="col-2"></div>
-          <div class="col-6 col--push-3"></div>
-          <div class="col-3"></div>
-          <div class="col-12"></div>
-        </div>
-      </div>
-      
-    </div>
-  </div>
+    
   
 
     
